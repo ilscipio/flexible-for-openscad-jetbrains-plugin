@@ -2,7 +2,7 @@
 
 A JetBrains IDE plugin that brings full OpenSCAD language support to IntelliJ IDEA and the rest of the JetBrains product range — with a live interactive 3D preview, visual gizmo editing, smart completion, navigation, and code inspections. Design parts that are precise, parametric, and version-controlled, without leaving your IDE.
 
-**📦 Get it on the JetBrains Marketplace: [Flexible For OpenSCAD](https://plugins.jetbrains.com/plugin/32015-flexible-for-openscad)**
+**Get it on the JetBrains Marketplace: [Flexible For OpenSCAD](https://plugins.jetbrains.com/plugin/32015-flexible-for-openscad)**
 
 ## Features
 
@@ -10,11 +10,11 @@ A JetBrains IDE plugin that brings full OpenSCAD language support to IntelliJ ID
 - **Smart completion & docs** — built-in, keyword, and user-symbol completion, plus documentation on hover
 - **Navigation & refactoring** — go to definition, find usages, rename, and cross-file `include`/`use` resolution
 - **Code analysis** — inspections for unresolved includes, undefined references, argument arity, unused declarations, and performance hints, plus inline render errors from the OpenSCAD CLI
-- **Interactive 3D preview** — renders as you save, with orbit controls, measurement tools, a cross-section clipping plane, an animation timeline, and source ↔ preview sync
+- **Interactive 3D preview** — rendered inside the IDE (no OpenSCAD executable required), with orbit controls, measurement tools, a cross-section clipping plane, an animation timeline, and source ↔ preview sync
 - **Transform gizmos** — move/rotate/scale geometry and write the edit back into your source
 - **Parametric Customizer & Outliner** — sliders/dropdowns from `// [..]` annotations, plus per-statement visibility and isolate toggles
 - **STL viewer** — interactive WebGL `.stl` viewing
-- **OpenSCAD CLI integration** — render, export (STL, 3MF, AMF, DXF, SVG, PNG), and open in OpenSCAD
+- **OpenSCAD integration (optional)** — with a local OpenSCAD install: export (STL, 3MF, AMF, DXF, SVG, PNG), external rendering, and open in OpenSCAD
 
 ## Installation
 
@@ -29,15 +29,15 @@ You can also install it directly from its [JetBrains Marketplace page](https://p
 
 ## Usage
 
-1. Install [OpenSCAD](https://openscad.org/) (2021.01+) and confirm the executable path under **Settings → OpenSCAD** (auto-detected on first launch)
-2. Open or create a `.scad` file — it will show the OpenSCAD icon in the project tree
-3. Edit with completion, navigation, and inspections; the 3D preview renders automatically when you save
-4. Drag the gizmos to transform geometry, add `// [min:max]` comments to get Customizer sliders, and export to STL/3MF/AMF/DXF/SVG/PNG when you're done
+1. Open or create a `.scad` file — it will show the OpenSCAD icon in the project tree
+2. Edit with completion, navigation, and inspections; the live 3D preview renders inside the IDE as you save — no external tools required
+3. Drag the gizmos to transform geometry, and add `// [min:max]` comments to get Customizer sliders
+4. *(Optional)* Install [OpenSCAD](https://openscad.org/) (2021.01+) and set its path under **Settings → OpenSCAD** to export to STL/3MF/AMF/DXF/SVG/PNG and render via the OpenSCAD engine
 
 ## Requirements
 
 - A JetBrains IDE, version **2023.3** or later
-- **OpenSCAD 2021.01+** for the 3D preview, rendering, and export features
+- **OpenSCAD 2021.01+** *(optional)* — only needed for export and external/CLI rendering; editing and the live 3D preview work without it
 
 ## Feedback & Community
 
