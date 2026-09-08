@@ -1,3 +1,5 @@
+![Rating](https://img.shields.io/jetbrains/plugin/r/stars/32015) ![Downloads](https://img.shields.io/jetbrains/plugin/d/32015) ![Version](https://img.shields.io/jetbrains/plugin/v/32015)
+
 # Flexible For OpenSCAD
 
 A JetBrains IDE plugin that brings full OpenSCAD language support to IntelliJ IDEA and the rest of the JetBrains product range — with a live interactive 3D preview, visual gizmo editing, smart completion, navigation, and code inspections. Design parts that are precise, parametric, and version-controlled, without leaving your IDE.
